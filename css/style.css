@@ -1,0 +1,241 @@
+body {
+  font: 15px "Alata", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Josefin Sans", sans-serif;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+.hover-underline,
+.nav-item {
+  position: relative;
+}
+
+.hover-underline:hover:before,
+.nav-item:hover::before {
+  opacity: 1;
+  transform: translateX(50%);
+}
+
+.hover-underline::before,
+.nav-item::before {
+  content: "";
+  background-color: hsl(0deg, 0%, 100%);
+  bottom: -7px;
+  height: 2px;
+  right: 50%;
+  position: absolute;
+  opacity: 0;
+  transition: 0.3s;
+  width: 24px;
+}
+
+body > header {
+  background-image: url(../images/mobile/image-hero.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  min-height: 650px;
+  position: relative;
+}
+
+.navbar-brand img {
+  height: 24px;
+}
+
+.navbar {
+  padding-top: 1.9rem;
+}
+.navbar .navbar-brand, .navbar .navbar-toggler {
+  z-index: 1000;
+}
+.navbar .navbar-toggler {
+  box-shadow: none;
+}
+.navbar #mobile-nav {
+  font-size: 1.5rem;
+  height: 100vh;
+  left: 0;
+  padding-top: 1.4rem;
+  top: 0;
+}
+.navbar #mobile-nav a {
+  color: hsl(0deg, 0%, 100%);
+}
+
+.hero__text h1 {
+  max-width: 377px;
+  padding: 1.5rem;
+  padding-right: 3rem;
+}
+
+main {
+  color: hsl(0deg, 0%, 55%);
+  padding: 1.5rem !important;
+}
+main > section, main > article {
+  margin-top: 6rem;
+}
+main h2 {
+  color: hsl(0deg, 0%, 0%);
+  margin: 3rem 0 1rem;
+}
+main p {
+  line-height: 1.7;
+}
+
+.interactive section {
+  padding: 0 1rem;
+}
+
+.creations {
+  margin-top: 6rem;
+  margin-bottom: 4rem;
+}
+.creations > header {
+  margin: 3rem 0;
+}
+.creations .card {
+  border: none;
+  margin-bottom: 25px;
+}
+.creations .card::before {
+  content: "";
+  background: linear-gradient(to right, hsla(0deg, 0%, 0%, 0.6), hsla(0deg, 0%, 0%, 0));
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transition: 0.3s;
+  width: 100%;
+}
+.creations .card:hover h3 {
+  color: hsl(0deg, 0%, 0%);
+}
+.creations .card:hover::before {
+  background: hsla(0deg, 0%, 100%, 0.8);
+}
+.creations h3 {
+  bottom: 15px;
+  color: hsl(0deg, 0%, 100%);
+  left: 20px;
+  line-height: 1;
+  transition: 0.3s;
+  z-index: 99;
+}
+.creations #seeAll__btn {
+  letter-spacing: 4px;
+  margin-top: 0.6rem;
+}
+
+.footer {
+  padding: 4rem 1.5rem 1.5rem 1.5rem;
+}
+.footer .nav-link {
+  color: hsl(0deg, 0%, 100%);
+}
+.footer .social__icons {
+  margin-top: 2rem;
+}
+.footer .social__icons .icon {
+  display: inline-block;
+  padding: 0.4rem;
+}
+.footer .social__icons .icon img {
+  height: 24px;
+}
+.footer .copyright {
+  color: hsl(0deg, 0%, 55%);
+}
+
+@media screen and (min-width: 576px) {
+  .hero__text h1 {
+    padding-right: 1.5rem;
+  }
+  article {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 490px;
+  }
+  .interactive section {
+    max-width: 460px;
+  }
+}
+@media screen and (min-width: 992px) {
+  body > header {
+    background-image: url(../images/desktop/image-hero.jpg);
+    min-height: 447px;
+  }
+  header .navbar {
+    position: relative !important;
+  }
+  .nav-link {
+    display: inline-block;
+    font-size: 1rem;
+    padding: 0 15px !important;
+    text-transform: capitalize;
+  }
+  .hero__text {
+    padding-left: 20px;
+    margin-top: 160px;
+    transform: translateY(-50%);
+  }
+  .hero__text h1 {
+    max-width: 430px;
+    font-size: 3rem !important;
+  }
+  article {
+    max-width: initial;
+    margin-left: initial;
+    margin-right: initial;
+  }
+  .interactive > section {
+    background-color: hsl(0deg, 0%, 100%);
+    bottom: 0;
+    padding: 4.5rem 0 0 4rem;
+    position: absolute;
+    right: 0;
+    z-index: 99;
+  }
+  .creations > header {
+    margin: 9rem 0 4rem;
+  }
+  .creations > section {
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+  }
+  .creations .card {
+    margin: 0;
+  }
+  .creations .card::before {
+    background: linear-gradient(to top, hsla(0deg, 0%, 0%, 0.6), hsla(0deg, 0%, 0%, 0));
+  }
+  .creations .card img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  .footer {
+    margin-top: 8rem;
+    padding-bottom: 3rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

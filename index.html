@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="d-flex d-lg-block align-items-center justify-content-center position-relative w-100 px-2">
+        <nav class="navbar navbar-expand-lg navbar-dark container-lg position-absolute top-0 w-100 px-2">
+            <div class="container-fluid">
+                <a href="" class="navbar-brand ps-0"><img src="images/logo.svg" alt=""></a>
+                <button class="navbar-toggler border-0 pe-0" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#mobile-nav" aria-controls="mobile-nav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <img id="menu__icon" src="images/icon-hamburger.svg" alt="">
+                </button>
+                <div class="offcanvas offcanvas-end text-uppercase bg-black w-100" tabindex="-1" id="mobile-nav"
+                    aria-labelledby="mobile-navLabel">
+                    <div class="offcanvas-header position-absolute w-100">
+                        <h5 class="offcanvas-title" id="mobile-navLabel">
+                            <a href="" class="navbar-brand ps-0"><img src="images/logo.svg" alt=""></a>
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+                            <img src="images/icon-close.svg" alt="">
+                        </button>
+                    </div>
+                    <div class="offcanvas-body d-flex align-items-center">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Careers</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Events</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Products</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Support</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <article class="hero__text container-lg text-light">
+            <h1 class="border border-2 mx-auto m-lg-0">Immersive experiences that deliver</h1>
+        </article>
+    </header>
+
+    <main class="container text-center">
+        <article class="interactive position-relative text-lg-start">
+            <picture>
+                <source media="(min-width: 992px)" srcset="images/desktop/image-interactive.jpg">
+                <img src="images/mobile/image-interactive.jpg" alt="" class="">
+            </picture>
+            <section class="">
+                <h2 class="mx-auto my-lg-0">The leader in interactive VR</h2>
+                <p class="mb-lg-0">
+                    Founded in 2011, Loopstudios has been producing world-class virtual reality projects for
+                    some of the best companies around the globe. Our award-winning creations have transformed businesses
+                    through digital experiences that bind to their brand.
+                </p>
+            </section>
+        </article>
+
+        <section class="creations position-relative text-start">
+            <header class="d-lg-flex align-items-lg-end justify-content-lg-between text-center">
+                <h2 class="my-0 mx-lg-0 mx-auto">Our creations</h2>
+                <a href="#" id="seeAll__btn"
+                    class="btn btn-outline-dark d-none m-0 d-lg-inline-block px-5 rounded-0 text-uppercase">See all</a>
+            </header>
+            <section>
+                <article class="card position-relative">
+                    <picture>
+                        <source media="(min-width: 992px)" srcset="images/desktop/image-deep-earth.jpg">
+                        <img src="images/mobile/image-deep-earth.jpg" alt="">
+                    </picture>
+                    <h3 class="position-absolute">Deep <br> earth</h3>
+                </article>
+                <article class="card position-relative">
+                    <picture>
+                        <source media="(min-width: 992px)" srcset="images/desktop/image-night-arcade.jpg">
+                        <img src="images/mobile/image-night-arcade.jpg" alt="">
+                    </picture>
+                    <h3 class="position-absolute">Night <br> arcade</h3>
+                </article>
+                <article class="card position-relative">
+                    <picture>
+                        <source media="(min-width: 992px)" srcset="images/desktop/image-soccer-team.jpg">
+                        <img src="images/mobile/image-soccer-team.jpg" alt="">
+                    </picture>
+                    <h3 class="position-absolute">Soccer <br> team VR</h3>
+                </article>
+                <article class="card position-relative">
+                    <picture>
+                        <source media="(min-width: 992px)" srcset="images/desktop/image-grid.jpg">
+                        <img src="images/mobile/image-grid.jpg" alt="">
+                    </picture>
+                    <h3 class="position-absolute"> The <br> grid</h3>
+                </article>
+                <article class="card position-relative">
+                    <picture>
+                        <source media="(min-width: 992px)" srcset="images/desktop/image-from-above.jpg">
+                        <img src="images/mobile/image-from-above.jpg" alt="">
+                    </picture>
+                    <h3 class="position-absolute"> From up <br> above VR</h3>
+                </article>
+                <article class="card position-relative">
+                    <picture>
+                        <source media="(min-width: 992px)" srcset="images/desktop/image-pocket-borealis.jpg">
+                        <img src="images/mobile/image-pocket-borealis.jpg" alt="">
+                    </picture>
+                    <h3 class="position-absolute"> Pocket <br> borealis</h3>
+                </article>
+                <article class="card position-relative">
+                    <picture>
+                        <source media="(min-width: 992px)" srcset="images/desktop/image-curiosity.jpg">
+                        <img src="images/mobile/image-curiosity.jpg" alt="">
+                    </picture>
+                    <h3 class="position-absolute"> The <br> curiosity</h3>
+                </article>
+                <article class="card position-relative">
+                    <picture>
+                        <source media="(min-width: 992px)" srcset="images/desktop/image-fisheye.jpg">
+                        <img src="images/mobile/image-fisheye.jpg" alt="">
+                    </picture>
+                    <h3 class="position-absolute"> Make it <br> fisheye</h3>
+                </article>
+                <article class="text-center d-lg-none">
+                    <a href="#" id="seeAll__btn" class="btn btn-outline-dark px-5 rounded-0 text-uppercase">See all</a>
+                </article>
+            </section>
+        </section>
+    </main>
+    <footer class="footer bg-black text-center text-lg-start">
+        <section class="container-lg d-lg-flex align-items-lg-center justify-content-lg-between">
+            <article class="footer__navigation">
+                <h2><a class="navbar-brand px-3" href="index.html"><img src="images/logo.svg" alt=""></a></h2>
+                <nav class="nav flex-column mt-4 flex-lg-row">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Careers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Support</a>
+                    </li>
+                </nav>
+            </article>
+            <section class="text-lg-end">
+                <article class="social__icons mt-lg-0">
+                    <a href="" class="icon hover-underline"><img src="images/icon-facebook.svg" alt=""></a>
+                    <a href="" class="icon hover-underline"><img src="images/icon-twitter.svg" alt=""></a>
+                    <a href="" class="icon hover-underline"><img src="images/icon-pinterest.svg" alt=""></a>
+                    <a href="" class="icon hover-underline"><img src="images/icon-instagram.svg" alt=""></a>
+                </article>
+                <article class="copyright mt-4">
+                    <p class="m-0">© 2021 Loopstudios. All rights reserved. </p>
+                </article>
+            </section>
+        </section>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+        integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
