@@ -28,7 +28,7 @@ img {
 .container-sm,
 .container-xl,
 .container-xxl {
-  max-width: 960px;
+  max-width: 1100px;
 }
 
 .hover-underline,
@@ -56,9 +56,9 @@ img {
 }
 
 body > header {
-  background-image: url(../images/mobile/image-hero.jpg);
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/mobile/image-hero.jpg);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   min-height: 650px;
   position: relative;
 }
@@ -187,11 +187,13 @@ main p {
 }
 @media screen and (min-width: 992px) {
   body > header {
-    background-image: url(../images/desktop/image-hero.jpg);
-    min-height: 447px;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/desktop/image-hero.jpg);
   }
   header .navbar {
     position: relative !important;
+  }
+  .navbar-brand img {
+    height: initial;
   }
   .nav-link {
     display: inline-block;
@@ -201,12 +203,13 @@ main p {
   }
   .hero__text {
     padding-left: 20px;
-    margin-top: 160px;
+    margin-top: 200px;
     transform: translateY(-50%);
   }
   .hero__text h1 {
-    max-width: 430px;
-    font-size: 3rem !important;
+    max-width: 530px;
+    padding-left: 30px;
+    font-size: 3.5rem !important;
   }
   article {
     max-width: initial;
