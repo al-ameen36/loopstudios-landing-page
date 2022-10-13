@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "sass --no-source-map scss/style.scss css/style.css",
-    "watch": "sass --watch scss/style.scss css/style.css"
+    "watch": "sass --watch --no-source-map scss/style.scss css/style.css"
   },
   "author": "muhammad al-ameen abdullahi",
   "license": "ISC",

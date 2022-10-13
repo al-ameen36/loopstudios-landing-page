@@ -147,7 +147,7 @@ main p {
   transition: 0.3s;
   z-index: 99;
 }
-.creations #seeAll__btn {
+.creations .seeAll__btn {
   letter-spacing: 4px;
   margin-top: 0.6rem;
 }
@@ -249,5 +249,3 @@ main p {
     padding-bottom: 3rem;
   }
 }
-
-/*# sourceMappingURL=style.css.map */
