@@ -217,6 +217,7 @@ main p {
   }
   .interactive > section h2 {
     font-size: 3rem;
+    margin-top: 2rem;
   }
   .creations > header {
     margin: 9rem 0 4rem;
