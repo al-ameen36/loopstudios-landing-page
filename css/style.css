@@ -22,15 +22,6 @@ img {
   max-width: 100%;
 }
 
-.container,
-.container-lg,
-.container-md,
-.container-sm,
-.container-xl,
-.container-xxl {
-  max-width: 1100px;
-}
-
 .hover-underline,
 .nav-item {
   position: relative;
@@ -207,9 +198,9 @@ main p {
     transform: translateY(-50%);
   }
   .hero__text h1 {
-    max-width: 530px;
+    max-width: 550px;
     padding-left: 30px;
-    font-size: 3.5rem !important;
+    font-size: 4rem !important;
   }
   article {
     max-width: initial;
@@ -224,8 +215,14 @@ main p {
     right: 0;
     z-index: 99;
   }
+  .interactive > section h2 {
+    font-size: 3rem;
+  }
   .creations > header {
     margin: 9rem 0 4rem;
+  }
+  .creations > header h2 {
+    font-size: 3rem;
   }
   .creations > section {
     display: grid;
