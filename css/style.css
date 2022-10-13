@@ -46,7 +46,7 @@ img {
   width: 24px;
 }
 
-body > header {
+body>header {
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/mobile/image-hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -61,12 +61,16 @@ body > header {
 .navbar {
   padding-top: 1.9rem;
 }
-.navbar .navbar-brand, .navbar .navbar-toggler {
+
+.navbar .navbar-brand,
+.navbar .navbar-toggler {
   z-index: 1000;
 }
+
 .navbar .navbar-toggler {
   box-shadow: none;
 }
+
 .navbar #mobile-nav {
   font-size: 1.5rem;
   height: 100vh;
@@ -74,6 +78,7 @@ body > header {
   padding-top: 1.4rem;
   top: 0;
 }
+
 .navbar #mobile-nav a {
   color: hsl(0deg, 0%, 100%);
 }
@@ -88,13 +93,17 @@ main {
   color: hsl(0deg, 0%, 55%);
   padding: 1.5rem !important;
 }
-main > section, main > article {
+
+main>section,
+main>article {
   margin-top: 6rem;
 }
+
 main h2 {
   color: hsl(0deg, 0%, 0%);
   margin: 3rem 0 1rem;
 }
+
 main p {
   line-height: 1.7;
 }
@@ -107,13 +116,16 @@ main p {
   margin-top: 6rem;
   margin-bottom: 4rem;
 }
-.creations > header {
+
+.creations>header {
   margin: 3rem 0;
 }
+
 .creations .card {
   border: none;
   margin-bottom: 25px;
 }
+
 .creations .card::before {
   content: "";
   background: linear-gradient(to right, hsla(0deg, 0%, 0%, 0.6), hsla(0deg, 0%, 0%, 0));
@@ -124,12 +136,15 @@ main p {
   transition: 0.3s;
   width: 100%;
 }
+
 .creations .card:hover h3 {
   color: hsl(0deg, 0%, 0%);
 }
+
 .creations .card:hover::before {
   background: hsla(0deg, 0%, 100%, 0.8);
 }
+
 .creations h3 {
   bottom: 15px;
   color: hsl(0deg, 0%, 100%);
@@ -138,6 +153,7 @@ main p {
   transition: 0.3s;
   z-index: 99;
 }
+
 .creations .seeAll__btn {
   letter-spacing: 4px;
   margin-top: 0.6rem;
@@ -146,19 +162,24 @@ main p {
 .footer {
   padding: 4rem 1.5rem 1.5rem 1.5rem;
 }
+
 .footer .nav-link {
   color: hsl(0deg, 0%, 100%);
 }
+
 .footer .social__icons {
   margin-top: 2rem;
 }
+
 .footer .social__icons .icon {
   display: inline-block;
   padding: 0.4rem;
 }
+
 .footer .social__icons .icon img {
   height: 24px;
 }
+
 .footer .copyright {
   color: hsl(0deg, 0%, 55%);
 }
@@ -167,47 +188,57 @@ main p {
   .hero__text h1 {
     padding-right: 1.5rem;
   }
+
   article {
     margin-left: auto;
     margin-right: auto;
     max-width: 490px;
   }
+
   .interactive section {
     max-width: 460px;
   }
 }
+
 @media screen and (min-width: 992px) {
-  body > header {
+  body>header {
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/desktop/image-hero.jpg);
   }
+
   header .navbar {
     position: relative !important;
   }
+
   .navbar-brand img {
     height: initial;
   }
+
   .nav-link {
     display: inline-block;
     font-size: 1rem;
     padding: 0 15px !important;
     text-transform: capitalize;
   }
+
   .hero__text {
     padding-left: 20px;
     margin-top: 200px;
     transform: translateY(-50%);
   }
+
   .hero__text h1 {
     max-width: 550px;
     padding-left: 30px;
     font-size: 4rem !important;
   }
+
   article {
     max-width: initial;
     margin-left: initial;
     margin-right: initial;
   }
-  .interactive > section {
+
+  .interactive>section {
     background-color: hsl(0deg, 0%, 100%);
     bottom: 0;
     padding: 4.5rem 0 0 4rem;
@@ -215,33 +246,41 @@ main p {
     right: 0;
     z-index: 99;
   }
-  .interactive > section h2 {
+
+  .interactive>section h2 {
     font-size: 3rem;
     margin-bottom: 2rem !important;
   }
-  .creations > header {
+
+  .creations>header {
     margin: 9rem 0 4rem;
   }
-  .creations > header h2 {
+
+  .creations>header h2 {
     font-size: 3rem;
   }
-  .creations > section {
+
+  .creations>section {
     display: grid;
     gap: 25px;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr;
   }
+
   .creations .card {
     margin: 0;
   }
+
   .creations .card::before {
     background: linear-gradient(to top, hsla(0deg, 0%, 0%, 0.6), hsla(0deg, 0%, 0%, 0));
   }
+
   .creations .card img {
     object-fit: cover;
     width: 100%;
     height: 100%;
   }
+
   .footer {
     margin-top: 8rem;
     padding-bottom: 3rem;
